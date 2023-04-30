@@ -10,6 +10,9 @@ import {
 import Main from './assets/components/Layout/Main';
 import Home from './assets/components/Home/Home';
 import Login from './assets/components/Login/Login';
+import Login1 from './assets/components/Login/Login1';
+import Register from './assets/components/Register/Register';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +26,14 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
+      },
+      {
+        path: '/login1',
+        element: <Login1></Login1>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
       }
     ]
   },
