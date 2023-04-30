@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -30,6 +31,7 @@ const Register = () => {
                 <input type="password" name="password" placeholder='Your password' id="password"/>
                 <br />
                 <input type="submit" value="Register"/>
+                <p><small>Already have an account? <Link to="/login1">Login</Link></small></p>
             </form>
         </div>
     );
